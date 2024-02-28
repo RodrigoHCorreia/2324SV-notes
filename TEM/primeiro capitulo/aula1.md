@@ -115,7 +115,7 @@ Não existe evidência estatística suficiente para concluir que a amostra (loja
 
 Dado que:
 
-W = 0.92084 > Wcritico;0,01 = 0,920
+W = 0.92084 > Wcritico;0,01 = 0,844
 ou
 a = 0,01 < p-value = 0,174
 
