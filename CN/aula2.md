@@ -45,3 +45,16 @@ Utility Computing - A 5ª utilizade(água, eletricidade, gás, telefone)
   - Custos investimento em novo hardware;
   - Custos de recursos humanos(serviços) em ações de manutenção;
   - Custos energéticos (eletricidade, ar condicionado);
+
+## Teorema CAP
+
+- Consistency, Availability, Partition Tolerance
+
+- **Num sistema distribuído que partilhe dados só podemos ter 2 das 3 propriedades.**
+
+- **Consistência** - Cada leitura observa a última escrita. O sistema oferece um estado consistente para **todos** os observadores.
+- **Disponibilidade** - O sistema continua a funcionar (eventual degradaao na qualidade de serviço) na presença de falhas ou de falta de conectividade de alguns nós.
+- **Tolerância a particionamento** - O sistema continua a funcionar apesar de haver atraso ou falha na entrega de mensagens.
+
+- Normalmente os sistemas distribuídos são **AP** ou **CP**.
+
