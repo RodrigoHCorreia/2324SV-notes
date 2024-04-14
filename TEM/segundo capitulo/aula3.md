@@ -6,7 +6,7 @@ A matriz **S** (matriz de covariâncias) é simétrica.
 A matriz **R** (matriz de correlações) é simétrica.
 Calculamos até à f) do ex 2 (matriz de correlações)
 
-e) 
+e)
 **S** = [1033,905   1050,786    1821,119]
     [           1707,810    2913,810]
     [                       5536,476]
@@ -26,4 +26,4 @@ A correlação entre as variáveis número de diplomados (x2) e número de inscr
 Sendo esta a correlação mais forte.
 Sendo positiva, indica que quanto maior é o número de diplomados, maior é o número de inscritos na IEFP.
 
-A mmagnitude do valor da covariância, não indica a força da relação entre as variáveis, apenas podemos ver que se é positiva ou negativa.
+A magnitude do valor da covariância, não indica a força da relação entre as variáveis, apenas podemos ver que se é positiva ou negativa.
