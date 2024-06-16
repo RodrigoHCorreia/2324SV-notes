@@ -1,6 +1,6 @@
 # Análise discriminante linear
 
-Objetivo: Tentar discriminar uma variável qualitativa (variável dependente) à custa de variáveis qualitativas (variáveis independentes).
+Objetivo: Tentar discriminar uma variável qualitativa (variável dependente) à custa de variáveis quantitativas (variáveis independentes).
 
 ## Pressupostos
 
