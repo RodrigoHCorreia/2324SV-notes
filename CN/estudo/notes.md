@@ -50,18 +50,33 @@ IaaS - **Infrastructure as a Service** - fornece recursos de computação, armaz
 - Diferentes modelos de interações cliente/servidor com 4 tipos de chamada:
 - **Unary**: Cliente envia um pedido e recebe uma resposta do servidor.
 - **Server streaming**: Cliente envia um pedido e recebe uma sequência de respostas do servidor.
+
+![alt text](image-16.png)
+
 - **Client streaming**: Cliente envia uma sequência de pedidos e recebe uma resposta do servidor.
 - **Bidirectional streaming**: Ambas as partes enviam uma sequência de mensagens, resultando numa sequência de respostas.
+
+![alt text](image-17.png)
+
+![protobuf](image-18.png)
 
 **Stubs de chamada no cliente:**
 - Stub Bloqueante: Só possível em Unary ou Server Streaming, onde bloqueia o cliente até receber a resposta.
 - Stub Não Bloqueante: Possível em todos os tipos de chamada, onde o cliente pode continuar a fazer outras coisas enquanto espera pela resposta.
 - Stub Future: Só possível em unary
 
+![Chamadas de stubs nos clientes](image-19.png)
+![Chamadas de stubs no clietnes 2](image-20.png)
+
 Como tratar exceções nos StreamObserver (onError(Throwable msg)):
 
 - Utilizar classes de StatusException, Status e StatusRuntimeException para tipificar os erros, se fizermos new Throwable() o destinatário recebe um status por defeito de "UNKNOWN".
   
+![Disponibilizar serviço no servidor](image-21.png)
+
+![Chamar no cliente](image-22.png)
+
+
 ## Armazenamento Distribuido
 
 - Necessidade de armazenar dados em ficheiros de vários formatos, partrilhados entre computadores das redes locais das organizações.
@@ -157,10 +172,13 @@ Desvantagens:
 - Pode haver pontos de sobrecarga. este problema é resolvido com técnicas de load balancing
 - Encriptação difífil quando o Broker tem de interpretar o contexto das kmensagens para as distribuir. 
 
+![Resumo da API](image-23.png)
+
+
 ## Compute Engine Instance Groups
 
 Controlo de elasticidade de VMs - **Instance Groups**:
- 
+
 Autoscaling on: cria e destrói com base em métricas pré-definidas - muito rápido a aumentar o número de instâncias, mas lento a diminuir
 Autoscaling off: aplicações podem alterar o número de VMs manualmente
 
